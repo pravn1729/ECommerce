@@ -15,7 +15,7 @@ var UserSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ['Client', 'Manager', 'Admin'],
+    enum: ['Client', 'Manager', 'Admin'], // Change the role architecture
     default: 'Client'
   }
 });
