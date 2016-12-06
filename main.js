@@ -33,7 +33,7 @@ apiRoutes.get('/dashboard', passport.authenticate('jwt', { session: false }), fu
 });
 */
 
-app.use('/api', apiRoutes);
+app.use('/api/'+config.version, apiRoutes);
 
 // Start Server
 app.listen(config.port);
