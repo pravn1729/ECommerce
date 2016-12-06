@@ -25,7 +25,7 @@ require('./routes/authRtr')(apiRoutes, passport);
 require('./routes/categoryRtr')(apiRoutes, passport);
 //require('./routes/makerRtr')(apiRoutes, passport);
 //require('./routes/productRtr')(apiRoutes, passport);
-
+ 
 // test apiRoute
 /*
 apiRoutes.get('/dashboard', passport.authenticate('jwt', { session: false }), function(req, res) {
