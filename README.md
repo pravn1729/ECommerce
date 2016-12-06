@@ -25,4 +25,4 @@ baseuri <b>/api/v1</b><br/>
 <b>PUT</b>      /categories/{id}/makers/{id}/products/{id}<br/>
 <b>DELETE</b>   /categories/{id}/makers/{id}/products/{id}<br/>
 <br/>
-#Move the above endpoints to <b>swagger-ui</b>
+Move the above endpoints to <b>swagger-ui</b>
