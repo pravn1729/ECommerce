@@ -1,4 +1,4 @@
-var Category = require('./models/category');
+var Category = require('../models/category');
 
 // POST /categories
 exports.postCategories = function(req,res){
@@ -59,7 +59,7 @@ exports.putCategory = function(req, res){
 };
 
 // DELETE /categories/:id
-export.deleteCategory = function(req, res){
+exports.deleteCategory = function(req, res){
 	Category.findByIdAndRemove(req.params.id, function(err){
 		if(err)
 			res.send(err);

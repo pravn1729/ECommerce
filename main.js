@@ -21,7 +21,7 @@ require('./config/passport')(passport);
 var apiRoutes = express.Router();
 
 //Protect Routes with JWT
-require('./routes/authRtr')(apiRoutes, passport);
+require('./routes/authRtr')(apiRoutes);
 require('./routes/categoryRtr')(apiRoutes, passport);
 //require('./routes/makerRtr')(apiRoutes, passport);
 //require('./routes/productRtr')(apiRoutes, passport);

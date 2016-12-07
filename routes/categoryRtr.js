@@ -1,6 +1,6 @@
 var categoryController = require('../controllers/categoryCtrl');
 
-module.exports = function (router) {
+module.exports = function (router, passport) {
 	
   router.post('/categories', passport.authenticate('jwt', { session: false }), 
 		  categoryController.postCategories);
